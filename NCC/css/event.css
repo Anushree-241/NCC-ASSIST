@@ -1,0 +1,48 @@
+﻿
+h1 {
+    text-align: center;
+    margin-top: 10px;
+}
+
+form{
+    display: flex compact;
+    margin-left:auto;
+    margin-right:auto;
+    box-sizing:content-box;
+}
+td {
+    font-size:x-large;
+    text-align:center;
+    padding:5px;
+}
+
+tr td {
+   
+    padding:7px;
+}
+
+.container1 {
+    border: solid black;
+    padding: 25px;
+    margin-right: auto;
+    margin-left: auto;
+    
+}  
+
+#Button1{
+    font-size:x-large;
+    margin-left:1rem;
+    margin-top:17px;
+    padding:5px;
+    font-size:large;
+    margin-right:2rem;
+}
+
+#Button2{
+    font-size:large;
+    padding:5px;
+}
+
+.coll{
+    text-align:left;
+}

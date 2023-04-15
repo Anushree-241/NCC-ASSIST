@@ -1,0 +1,40 @@
+﻿.container2 {
+    box-sizing:content-box;
+    border:3px solid black;
+}
+
+.col1 {
+    text-align:left;
+}
+
+.buttons{
+    text-align:center;
+}
+
+#Button1 {
+    font-size: x-large;
+    padding:5px;
+    margin-right:2rem;
+}
+
+#Button2 {
+    font-size: x-large;
+    padding: 5px;
+}
+
+td{
+    padding:10px;
+    font-size:x-large;
+    text-align:left;
+    
+}
+
+.radio{
+    text-align: center;
+}
+
+#RadioButtonList2 {
+    text-align: center;
+}
+
+

@@ -1,0 +1,89 @@
+﻿
+create table adminlogin(username varchar(100),password varchar(100) );
+insert into adminlogin values('admin','admin');
+
+create table cadetlogin(loginid varchar(100),username varchar(100),password varchar(100) );
+//insert into cadet values('admin','admin')
+
+create table event(event_id varchar(100),event_name varchar(100),event_desc varchar(100),
+event_date varchar(100),event_time varchar(100),event_photos varchar(100),event_type varchar(100),event_amount varchar(100));
+
+create table camp(camp_id varchar(100),camp_name varchar(100),camp_desc varchar(100),
+camp_startingdate varchar(100),camp_endingdate varchar(100),camp_duration varchar(100),
+camp_type varchar(100),camp_location varchar(100),camp_purpose varchar(100),camp_firing varchar(100),camp_photos varchar(100),camp_amount varchar(100));
+
+create table cadet(cadet_id varchar(100),cadet_name varchar(100),cadet_year varchar(100),cadet_rank varchar(100),
+cadet_course varchar(100),cadet_gender varchar(100),cadet_email varchar(100),cadet_mobileno varchar(100),
+cadet_photo varchar(100),cadet_status varchar(100));
+
+create table selection(s_id varchar(100),s_type varchar(100),cadet_id varchar(100),cadet_name varchar(100),
+s_result varchar(100));
+
+create table rank_holders(r_id varchar(100),r_cfname varchar(100),r_clname varchar(100),r_c_fathersname varchar(100),r_course varchar(100),r_courseyear varchar(100),r_c_batch varchar(100),rank varchar(100));
+
+create table campreimbursement(cr_id varchar(100),r_cadet_id varchar(100),r_cadet_name varchar(100),r_cadet_course varchar(100),r_cadet_courseyear varchar(100),r_camp_name varchar(100),r_camp_date varchar(100),campamount varchar(100),amt_reimbust varchar(100));
+create table eventreimbursement(er_id varchar(100),r_cadet_id varchar(100),r_cadet_name varchar(100),r_cadet_course varchar(100),r_cadet_courseyear varchar(100),r_event_name varchar(100),r_event_date varchar(100),eventamount varchar(100),amt_reimbust varchar(100));
+
+create table attendance(cadet_id varchar(100),cadet_name varchar(100),event_id varchar(100),camp_id varchar(100),event_type varchar(100),e_present varchar(100),e_absent varchar(100),c_present varchar(100),c_absent varchar(100));
+
+create table parade_attendance(p_id varchar(100),cadet_id varchar(100),cadet_name varchar(100),parade_firing varchar(100),parade_date varchar(100),parade_present varchar(100),parade_absent varchar(100));
+
+create table register(reg_id varchar(100),reg_fname varchar(100),reg_mname varchar(100),reg_lname varchar(100),
+reg_nationality varchar(100),reg_dob varchar(100),reg_fathers_fname varchar(100),reg_fathers_mname varchar(100),
+reg_fathers_lname varchar(100),reg_mothers_fname varchar(100),reg_mothers_mname varchar(100),reg_mothers_lname varchar(100),
+reg_address varchar(100),reg_landmark varchar(100),reg_state varchar(100),reg_district varchar(100),reg_taluk varchar(100),
+reg_city varchar(100),reg_pincode varchar(100),reg_gender varchar(100),reg_mobileno varchar(100),reg_emailid varchar(100),
+reg_bloodgroup varchar(100),nearest_railway_station varchar(100),nearest_police_station varchar(100),reg_conviction_report varchar(100), 
+reg_qualification varchar(100),reg_stream varchar(100),reg_course varchar(100),reg_courseyear varchar(100),reg_collegeschool varchar(100),reg_marks varchar(100),reg_identification_mark varchar(100),
+enrollement_permission varchar(100),ncc_unit varchar(100),
+prev_enrollement varchar(100),prev_dismissed varchar(100),next_of_kin varchar(100),next_of_kin_address varchar(100),
+next_of_kin_phoneno varchar(100),reg_ifsc varchar(100),reg_accountno varchar(100),reg_aadharno varchar(100),
+reg_panno varchar(100),reg_photo varchar(100),reg_declarationform varchar(100));
+
+
+create table cadet(cid IDENTITY,c_fname varchar(100),c_mname varchar(100),c_lname varchar(100),
+c_nationality varchar(100),c_dob varchar(100),c_fathers_fname varchar(100),c_fathers_mname varchar(100),
+c_fathers_lname varchar(100),c_mothers_fname varchar(100),c_mothers_mname varchar(100),c_mothers_lname varchar(100),
+c_address varchar(100),c_landmark varchar(100),c_state varchar(100),c_district varchar(100),c_taluk varchar(100),
+c_city varchar(100),c_pincode varchar(100),c_gender varchar(100),c_mobileno varchar(100),c_emailid varchar(100),
+c_bloodgroup varchar(100),c_nearest_railway_station varchar(100),c_nearest_police_station varchar(100),c_conviction_report varchar(100), 
+c_qualification varchar(100),c_stream varchar(100),c_course varchar(100),c_courseyear varchar(100),c_collegeschool varchar(100),c_marks varchar(100),c_identification_mark varchar(100),
+c_enrollement_permission varchar(100),c_ncc_unit varchar(100),
+c_prev_enrollement varchar(100),c_prev_dismissed varchar(100),c_next_of_kin varchar(100),c_next_of_kin_address varchar(100),
+c_next_of_kin_phoneno varchar(100),c_ifsc varchar(100),c_accountno varchar(100),c_aadharno varchar(100),
+c_panno varchar(100),c_photo varchar(100),c_declarationform varchar(100),c_status varchar(100),c_regid varchar(100));
+
+create table cadetrej(cid IDENTITY,c_fname varchar(100),c_mname varchar(100),c_lname varchar(100),
+c_nationality varchar(100),c_dob varchar(100),c_fathers_fname varchar(100),c_fathers_mname varchar(100),
+c_fathers_lname varchar(100),c_mothers_fname varchar(100),c_mothers_mname varchar(100),c_mothers_lname varchar(100),
+c_address varchar(100),c_landmark varchar(100),c_state varchar(100),c_district varchar(100),c_taluk varchar(100),
+c_city varchar(100),c_pincode varchar(100),c_gender varchar(100),c_mobileno varchar(100),c_emailid varchar(100),
+c_bloodgroup varchar(100),c_nearest_railway_station varchar(100),c_nearest_police_station varchar(100),c_conviction_report varchar(100), 
+c_qualification varchar(100),c_stream varchar(100),c_course varchar(100),c_courseyear varchar(100),c_collegeschool varchar(100),c_marks varchar(100),c_identification_mark varchar(100),
+c_enrollement_permission varchar(100),c_ncc_unit varchar(100),
+c_prev_enrollement varchar(100),c_prev_dismissed varchar(100),c_next_of_kin varchar(100),c_next_of_kin_address varchar(100),
+c_next_of_kin_phoneno varchar(100),c_ifsc varchar(100),c_accountno varchar(100),c_aadharno varchar(100),
+c_panno varchar(100),c_photo varchar(100),c_declarationform varchar(100),c_status varchar(100),c_regid varchar(100));
+
+
+create table campreg(firstname varchar(100),middlename varchar(100),lastname varchar(100),mobileno varchar(100),
+email varchar(100),parentmobileno varchar(100),courseyear varchar(100),course varchar(100),college varchar(100));
+
+
+create table parade(p_id varchar(100),p_date varchar(100),p_starttime varchar(100),p_endtime varchar(100),p_venue varchar(100),
+p_topicscovered varchar(100),p_refreshments varchar(100));
+
+create table physicaltest( pt_id varchar(100),pt_run varchar(100),pt_pushup varchar(100),pt_situps varchar(100),pt_crunches varchar(100)),pt_total varchar(100));   )
+
+create table writtentest(wt_id varchar(100), wt_score varchar(100),wt_total varchar(100));
+
+create table interview(it_id varchar(100),it_communication varchar(100),it_knowledge varchar(100),it_confidence varchar(100),it_total varchar(100));
+
+create table campatt(cadetid varchar(100),campid varchar(100),att_status varchar(100) ,updateddate varchar(100) );
+
+create table eventatt(cadetid varchar(100),eventid varchar(100),att_status varchar(100) ,updateddate varchar(100) );
+
+create table paradeatt(cadetid varchar(100),paradeid varchar(100),att_status varchar(100),updateddate varchar(100));
+
+create table photogallery( id varchar(100), camp_id varchar(100),a_id varchar(100),a_name varchar(100),createdat varchar(100),updatedat varchar(100));
+

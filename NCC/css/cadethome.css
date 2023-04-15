@@ -1,0 +1,76 @@
+﻿* {
+    padding: 0;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px
+}
+
+.navbar {
+    background-color: darkblue;
+    display: flex;
+
+}
+
+a {
+    padding: 5px;
+    margin-top: 30px;
+    margin-bottom: -10px;
+    margin-right: 65px;
+    margin-left: 40px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 19px;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    margin-left: 15px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+.clogo {
+    width: 60px;
+    height: 60px;
+    margin-top: 25px;
+}
+
+.container {
+    box-sizing:content-box;
+    
+    width: 21%;
+    display: flex;
+    margin-top: 15px;
+    margin-left: 5px;
+    background-color: lightblue;
+    border-radius: 10px;
+}
+
+.sidenavitems {
+    margin-top: 200px;
+}
+
+  /*.sidenavitems li {
+        margin-top: 70px;
+        margin-bottom: 50px;
+        list-style: none;
+        text-align: center
+    }
+*/  
+
+#profile {
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: darkblue;
+}
+
+#regimg{
+    border-radius:20px;
+}
